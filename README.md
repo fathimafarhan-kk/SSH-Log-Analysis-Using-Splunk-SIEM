@@ -91,7 +91,7 @@ Start Searching
 
 ---
 
-#  Task 1: Ingest and Parse Logs
+# 📥 Task 1: Ingest and Parse Logs
 
 ## Validate Extracted Fields
 
@@ -109,8 +109,6 @@ Ensure the following fields are properly extracted:
 index=ssh_logs
 | stats count by event_type
 ```
-````markdown id="plx83m"
-
 
 ### Expected Event Types
 
@@ -125,7 +123,7 @@ index=ssh_logs
 <img width="1909" height="971" alt="Screenshot 2026-05-06 134304" src="https://github.com/user-attachments/assets/907b82db-8f8c-4263-9784-19db7c68cf40" />
 <img width="1918" height="971" alt="Screenshot 2026-05-06 134402" src="https://github.com/user-attachments/assets/9810ca55-7b08-4a54-a996-e87f99986536" />
 <img width="1913" height="956" alt="Screenshot 2026-05-06 134454" src="https://github.com/user-attachments/assets/f8d3c89c-1c06-4dfc-ae0b-2d5183c09c98" />
-<img width="1918" height="951" alt="Screenshot 2026-05-06 134531" src="https://github.com/user-attachments/assets/15df6ce5-48e8-4b8a-a9bb-03527a6ed30c" /> want add Every screenshot should have some text explaining what the screenshot is about.
+<img width="1918" height="951" alt="Screenshot 2026-05-06 134531" src="https://github.com/user-attachments/assets/15df6ce5-48e8-4b8a-a9bb-03527a6ed30c" /> 
 
 
 
