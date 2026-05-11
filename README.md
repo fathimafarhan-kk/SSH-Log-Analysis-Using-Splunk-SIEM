@@ -42,26 +42,21 @@ By completing this project, I learned how to ingest logs into Splunk, write SPL 
 <div>
 <img src="https://img.shields.io/badge/-Splunk-000000?&style=for-the-badge&logo=Splunk&logoColor=white" />
 <img src="https://img.shields.io/badge/-Kali_Linux-557C94?&style=for-the-badge&logo=kalilinux&logoColor=white" />
-<img src="https://img.shields.io/badge/-Metasploitable-2E2E2E?&style=for-the-badge&logo=linux&logoColor=white" />
 <img src="https://img.shields.io/badge/-SSH-4D4D4D?&style=for-the-badge&logo=gnu-bash&logoColor=white" />
-<img src="https://img.shields.io/badge/-JSON-000000?&style=for-the-badge&logo=json&logoColor=white" />
-<img src="https://img.shields.io/badge/-Windows_VM-0078D6?&style=for-the-badge&logo=windows&logoColor=white" />
 </div>
 
 ---
 
-# 🧪 Lab Setup & Prerequisites
+#  Lab Setup
 
 Before starting this project:
 
 - Install Splunk Enterprise or Splunk Free Edition
-- Prepare a Windows VM for Splunk installation
-- Use Kali Linux / Metasploitable for SSH activity generation
 - Download the SSH log dataset (`ssh_log.json`)
 
 ---
 
-# ⚙️ Log Preparation & Ingestion
+#  Log Preparation & Ingestion
 
 ## Step 1: Upload SSH Logs into Splunk
 
@@ -124,7 +119,7 @@ index=ssh_logs
 
 ---
 
-# ❌ Task 2: Analyze Failed Login Attempts
+#  Task 2: Analyze Failed Login Attempts
 
 ## Search Failed SSH Logins
 
@@ -148,7 +143,7 @@ Create a **Bar Chart** showing:
 
 ---
 
-# 🚨 Task 3: Detect Brute-force Attempts
+#  Task 3: Detect Brute-force Attempts
 
 ## Search Multiple Failed Authentication Attempts
 
@@ -183,7 +178,7 @@ This helps detect:
 
 ---
 
-# ✅ Task 4: Track Successful Logins
+#  Task 4: Track Successful Logins
 
 ## Search Successful SSH Logins
 
@@ -208,7 +203,7 @@ Create a dashboard panel showing:
 
 ---
 
-# 🔍 Task 5: Detect Connections Without Authentication
+#  Task 5: Detect Connections Without Authentication
 
 ## Search Unauthenticated SSH Connections
 
@@ -232,7 +227,7 @@ index=ssh_logs event_type="Connection Without Authentication"
 
 ---
 
-# 📊 Dashboard Components
+#  Dashboard Components
 
 The Splunk dashboard includes:
 
@@ -244,7 +239,7 @@ The Splunk dashboard includes:
 
 ---
 
-# 🚨 Alerts Configured
+#  Alerts Configured
 
 | Alert Name | Purpose |
 |------------|----------|
@@ -254,7 +249,7 @@ The Splunk dashboard includes:
 
 ---
 
-# 📈 Key Outcomes
+#  Key Outcomes
 
 By completing this project, I was able to:
 
@@ -267,7 +262,7 @@ By completing this project, I was able to:
 
 ---
 
-# 🛡️ SOC Analyst Skills Demonstrated
+#  SOC Analyst Skills Demonstrated
 
 - Log Analysis
 - Threat Detection
