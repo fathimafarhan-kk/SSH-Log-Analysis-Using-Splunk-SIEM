@@ -142,6 +142,8 @@ Create a **Bar Chart** showing:
 - Number of Failed Login Attempts
 
 ---
+<img width="1898" height="908" alt="Screenshot 2026-05-06 134237" src="https://github.com/user-attachments/assets/16b4ff63-c5e5-4a77-88b2-ea0409487766" />
+
 
 #  Task 3: Detect Brute-force Attempts
 
