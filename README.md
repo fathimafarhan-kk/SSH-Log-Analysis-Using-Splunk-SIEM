@@ -137,6 +137,7 @@ index=ssh_logs
 index=ssh_logs event_type="Failed SSH Login"
 | stats count by id.orig_h
 ```
+<img width="1905" height="961" alt="Screenshot 2026-05-06 182306" src="https://github.com/user-attachments/assets/cd0ebffd-2107-4b9f-b728-85b43280a20b" />
 
 ## Objective
 
@@ -150,6 +151,7 @@ Create a **Bar Chart** showing:
 
 - Source IP Address
 - Number of Failed Login Attempts
+<img width="1911" height="947" alt="Screenshot 2026-05-06 182417" src="https://github.com/user-attachments/assets/c9cc8781-ad4f-467a-a3c3-2bfc1d4d54da" />
 
 ---
 
