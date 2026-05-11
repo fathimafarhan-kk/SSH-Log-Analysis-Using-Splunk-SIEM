@@ -109,21 +109,78 @@ Ensure the following fields are properly extracted:
 index=ssh_logs
 | stats count by event_type
 ```
+````markdown id="plx83m"
+## 📸 Project Screenshots & Explanation
 
-### Expected Event Types
+### 1️⃣ SSH Log Data Successfully Ingested into Splunk
 
-- Successful SSH Login
-- Failed SSH Login
-- Multiple Failed Authentication Attempts
-- Connection Without Authentication
+This screenshot shows the uploaded SSH log dataset inside Splunk after ingestion and field extraction. Splunk successfully parsed the JSON log file and categorized the events based on SSH activity types such as successful logins, failed logins, and authentication attempts.
 
----
 <img width="1898" height="908" alt="Screenshot 2026-05-06 134237" src="https://github.com/user-attachments/assets/384993c8-800d-4b0f-9f61-273f7b0aec49" />
 
+---
+
+### 2️⃣ Validation Search for SSH Event Types
+
+This search validates whether Splunk correctly extracted the `event_type` field from the SSH logs. The query groups all SSH activities into categories such as successful logins, failed login attempts, multiple failed authentications, and unauthenticated connections.
+
+#### SPL Query Used
+
+```spl
+index=ssh_logs
+| stats count by event_type
+```
+
 <img width="1909" height="971" alt="Screenshot 2026-05-06 134304" src="https://github.com/user-attachments/assets/907b82db-8f8c-4263-9784-19db7c68cf40" />
+
+---
+
+### 3️⃣ Failed SSH Login Attempt Analysis
+
+This screenshot displays failed SSH login attempts grouped by source IP address. The analysis helps identify suspicious IPs attempting unauthorized access and can indicate brute-force or password-spraying attacks.
+
+#### SPL Query Used
+
+```spl
+index=ssh_logs event_type="Failed SSH Login"
+| stats count by id.orig_h
+```
+
 <img width="1918" height="971" alt="Screenshot 2026-05-06 134402" src="https://github.com/user-attachments/assets/9810ca55-7b08-4a54-a996-e87f99986536" />
+
+---
+
+### 4️⃣ Detection of Multiple Failed Authentication Attempts
+
+This screenshot highlights repeated failed authentication attempts between source and destination hosts. Multiple failures from the same source IP may indicate brute-force attack activity targeting SSH services.
+
+#### SPL Query Used
+
+```spl
+index=ssh_logs event_type="Multiple Failed Authentication Attempts"
+| stats count by id.orig_h, id.resp_h
+```
+
 <img width="1913" height="956" alt="Screenshot 2026-05-06 134454" src="https://github.com/user-attachments/assets/f8d3c89c-1c06-4dfc-ae0b-2d5183c09c98" />
+
+---
+
+### 5️⃣ Monitoring Connections Without Authentication
+
+This screenshot shows SSH connections where no authentication was completed. These events may indicate SSH scanning, probing activity, or incomplete connection attempts from suspicious systems.
+
+#### SPL Query Used
+
+```spl
+index=ssh_logs event_type="Connection Without Authentication"
+| stats count by id.orig_h
+```
+
 <img width="1918" height="951" alt="Screenshot 2026-05-06 134531" src="https://github.com/user-attachments/assets/15df6ce5-48e8-4b8a-a9bb-03527a6ed30c" />
+
+---
+````
+
 
 
 
