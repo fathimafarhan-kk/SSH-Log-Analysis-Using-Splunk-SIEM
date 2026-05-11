@@ -91,7 +91,7 @@ Start Searching
 
 ---
 
-# 📥 Task 1: Ingest and Parse Logs
+#  Task 1: Ingest and Parse Logs
 
 ## Validate Extracted Fields
 
@@ -118,6 +118,15 @@ index=ssh_logs
 - Connection Without Authentication
 
 ---
+<img width="1898" height="908" alt="Screenshot 2026-05-06 134237" src="https://github.com/user-attachments/assets/384993c8-800d-4b0f-9f61-273f7b0aec49" />
+
+<img width="1909" height="971" alt="Screenshot 2026-05-06 134304" src="https://github.com/user-attachments/assets/907b82db-8f8c-4263-9784-19db7c68cf40" />
+<img width="1918" height="971" alt="Screenshot 2026-05-06 134402" src="https://github.com/user-attachments/assets/9810ca55-7b08-4a54-a996-e87f99986536" />
+<img width="1913" height="956" alt="Screenshot 2026-05-06 134454" src="https://github.com/user-attachments/assets/f8d3c89c-1c06-4dfc-ae0b-2d5183c09c98" />
+<img width="1918" height="951" alt="Screenshot 2026-05-06 134531" src="https://github.com/user-attachments/assets/15df6ce5-48e8-4b8a-a9bb-03527a6ed30c" />
+
+
+
 
 #  Task 2: Analyze Failed Login Attempts
 
@@ -142,7 +151,7 @@ Create a **Bar Chart** showing:
 - Number of Failed Login Attempts
 
 ---
-<img width="1918" height="951" alt="Screenshot 2026-05-06 134531" src="https://github.com/user-attachments/assets/9375d7f3-9cfa-4f14-ba46-3139ee564865" />
+
 
 
 
