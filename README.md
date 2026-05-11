@@ -2,29 +2,27 @@
 
 ## Project Overview
 
-This project demonstrates how to use Splunk for SSH log monitoring and security analysis. 
-focuses on:
-detecting suspicious SSH activities such as brute-force attacks, failed authentication attempts, and unauthorized access attempts through log ingestion, searching, visualization, and alerting.
+This project demonstrates how to use Splunk for SSH log monitoring and security analysis.
 
 The project simulates real-world SOC Analyst tasks by analyzing SSH authentication logs and creating dashboards and alerts for security monitoring.
 
 ---
 
-# 🎯 Objective
+#  Objective
 
 The goal of this project is to analyze SSH authentication logs to detect:
 
-- ✅ Successful SSH logins
-- ❌ Failed login attempts
-- 🚨 Multiple failed authentication attempts (Brute-force indicators)
-- 🔍 Connections without authentication attempts
-- 📊 Suspicious login behavior and attack patterns
+- Successful SSH logins
+- Failed login attempts
+- Multiple failed authentication attempts (Brute-force indicators)
+- Connections without authentication attempts
+- Suspicious login behavior and attack patterns
 
 By completing this project, I learned how to ingest logs into Splunk, write SPL queries, create visualizations, build dashboards, and configure alerts for security monitoring.
 
 ---
 
-# 🧠 Skills Learned
+# Skills Learned
 
 - SIEM Log Analysis using Splunk
 - SSH Authentication Log Monitoring
@@ -39,7 +37,7 @@ By completing this project, I learned how to ingest logs into Splunk, write SPL 
 
 ---
 
-# 🛠️ Tools & Technologies Used
+# Tools & Technologies Used
 
 <div>
 <img src="https://img.shields.io/badge/-Splunk-000000?&style=for-the-badge&logo=Splunk&logoColor=white" />
