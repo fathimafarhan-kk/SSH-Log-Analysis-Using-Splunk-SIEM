@@ -91,7 +91,7 @@ Start Searching
 
 ---
 
-# 📥 Task 1: Ingest and Parse Logs
+#  1: Ingest and Parse Logs
 
 ## Validate Extracted Fields
 
@@ -129,7 +129,7 @@ index=ssh_logs
 
 
 
-#  Task 2: Analyze Failed Login Attempts
+# 2: Analyze Failed Login Attempts
 
 ## Search Failed SSH Logins
 
@@ -158,7 +158,7 @@ Create a **Bar Chart** showing:
 
 
 
-#  Task 3: Detect Brute-force Attempts
+# 3: Detect Brute-force Attempts
 
 ## Search Multiple Failed Authentication Attempts
 
@@ -196,7 +196,7 @@ This helps detect:
 
 ---
 
-#  Task 4: Track Successful Logins
+# 4: Track Successful Logins
 
 ## Search Successful SSH Logins
 
@@ -226,7 +226,7 @@ Create a dashboard panel showing:
 
 ---
 
-#  Task 5: Detect Connections Without Authentication
+#  5: Detect Connections Without Authentication
 
 ## Search Unauthenticated SSH Connections
 
@@ -252,38 +252,7 @@ index=ssh_logs event_type="Connection Without Authentication"
 
 ---
 
-#  Dashboard Components
 
-The Splunk dashboard includes:
-
-- Failed Login Attempts by IP
-- Successful Login Activity
-- Brute-force Detection Panel
-- SSH Connections Without Authentication
-- Timechart of Suspicious Activity
-
----
-
-#  Alerts Configured
-
-| Alert Name | Purpose |
-|------------|----------|
-| SSH Brute Force Detection | Detect excessive failed login attempts |
-| Suspicious SSH Activity | Monitor repeated unauthenticated connections |
-| High Failed Login Count | Detect password spraying attacks |
-
----
-
-#  Key Outcomes
-
-By completing this project, I was able to:
-
-- Ingest and analyze SSH logs using Splunk
-- Detect brute-force login attempts
-- Investigate suspicious SSH activity
-- Create visual dashboards for monitoring
-- Configure real-time security alerts
-- Gain hands-on SOC Analyst experience
 
 ---
 
