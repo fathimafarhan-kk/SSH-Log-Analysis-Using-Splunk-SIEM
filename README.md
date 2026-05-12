@@ -166,6 +166,7 @@ Create a **Bar Chart** showing:
 index=ssh_logs event_type="Multiple Failed Authentication Attempts"
 | stats count by id.orig_h, id.resp_h
 ```
+<img width="1915" height="972" alt="Screenshot 2026-05-06 182638" src="https://github.com/user-attachments/assets/983868ab-7bae-4361-aa6a-841b3faaa172" />
 
 ## Detect Repeated Login Failures
 
@@ -182,6 +183,8 @@ Trigger an alert when:
 
 - Any source IP performs more than **5 failed login attempts**
 - Within a **10-minute window**
+<img width="1919" height="963" alt="Screenshot 2026-05-06 183405" src="https://github.com/user-attachments/assets/4b99ff2b-383c-4396-b236-36929723a43c" />
+<img width="1902" height="1008" alt="Screenshot 2026-05-06 183443" src="https://github.com/user-attachments/assets/16a3b770-3c2d-443e-83b3-522ab8449ffa" />
 
 ### Alert Purpose
 
@@ -207,6 +210,7 @@ index=ssh_logs event_type="Successful SSH Login"
 - Identify legitimate and suspicious logins
 - Compare successful logins with previous failed attempts
 - Detect potential compromised accounts
+<img width="1914" height="965" alt="Screenshot 2026-05-06 183731" src="https://github.com/user-attachments/assets/7fa41553-3e92-482e-89f3-a4ddc3d7fd56" />
 
 ## Dashboard Visualization
 
@@ -215,6 +219,10 @@ Create a dashboard panel showing:
 - Top source IPs
 - Successful login counts
 - Frequently targeted systems
+<img width="1914" height="965" alt="Screenshot 2026-05-06 183731" src="https://github.com/user-attachments/assets/db0c6630-84ae-4885-afd7-ed510771e37c" />
+<img width="1906" height="937" alt="Screenshot 2026-05-06 184148" src="https://github.com/user-attachments/assets/ddbe75f3-8eed-4c8e-a062-9b351337c7d3" />
+<img width="1911" height="893" alt="Screenshot 2026-05-06 184215" src="https://github.com/user-attachments/assets/4b79549a-4216-4900-8e6f-61394aa6ef5f" />
+<img width="1919" height="924" alt="Screenshot 2026-05-06 184227" src="https://github.com/user-attachments/assets/59a25ab8-5d2d-4576-8812-45cfc7fe815f" />
 
 ---
 
@@ -226,6 +234,7 @@ Create a dashboard panel showing:
 index=ssh_logs event_type="Connection Without Authentication"
 | stats count by id.orig_h
 ```
+<img width="1912" height="973" alt="Screenshot 2026-05-06 184433" src="https://github.com/user-attachments/assets/1e46d9c7-2e5e-4274-b104-8c057af6f0e4" />
 
 ## Time-based Monitoring
 
@@ -233,6 +242,7 @@ index=ssh_logs event_type="Connection Without Authentication"
 index=ssh_logs event_type="Connection Without Authentication"
 | timechart count by id.orig_h
 ```
+<img width="1919" height="967" alt="Screenshot 2026-05-06 184953" src="https://github.com/user-attachments/assets/cfce9fe2-58c7-464d-ac02-25ac1b7ea05d" />
 
 ## Investigation Goals
 
@@ -277,23 +287,7 @@ By completing this project, I was able to:
 
 ---
 
-#  SOC Analyst Skills Demonstrated
-
-- Log Analysis
-- Threat Detection
-- Security Monitoring
-- Incident Investigation
-- SIEM Operations
-- SPL Query Writing
-- Dashboard Development
-- Alert Engineering
 
 ---
 
-# 📚 Conclusion
 
-This project provided practical hands-on experience with Splunk SIEM and SSH log analysis. It strengthened my understanding of SOC operations, threat detection, and security monitoring workflows commonly used by cybersecurity analysts in real-world environments.
-
-The project demonstrates foundational SOC Analyst skills and serves as a valuable cybersecurity portfolio project.
-
----
