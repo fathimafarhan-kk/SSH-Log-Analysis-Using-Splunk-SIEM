@@ -250,13 +250,4 @@ index=ssh_logs event_type="Connection Without Authentication"
 - Identify port scanning behavior
 - Monitor repeated incomplete SSH sessions
 
----
-
-
-
----
-
-
----
-
-
+-
